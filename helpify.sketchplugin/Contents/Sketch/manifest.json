@@ -1,0 +1,25 @@
+{
+  "name": "Helpify",
+  "description": "Helparator",
+  "author": "Lucky Fox Design",
+  "version": "1.0.0",
+  "identifier": "helpify.sketch.plugin.helpify",
+  "homepage": "https://helpify.luckyfox.design",
+  "compatibleVersion": "52.1",
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "Plugin with simple actions: Generate random numbers",
+      "identifier": "random-numbers",
+      "script": "index.js"
+    }
+  ],
+  "menu": {
+    "title": "🙄 Helpify",
+    "items": [
+      "random-numbers"
+    ]
+  },
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com/Luckyfoxdesign/helpify/master/.appcast.xml"
+}

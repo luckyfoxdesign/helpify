@@ -1,0 +1,40 @@
+{
+  "name": "Helpify",
+  "description": "Plugin with simple actions: Generate random numbers",
+  "version": "2.1.0",
+  "homepage": "https://github.com/Luckyfoxdesign/helpify",
+  "engines": {
+    "sketch": ">=49.0"
+  },
+  "keywords": [
+    "sketchplugin"
+  ],
+  "skpm": {
+    "name": "Helpify",
+    "manifest": "src/manifest.json",
+    "authorEmail": "luckyfoxdesign@yandex.ru",
+    "main": "helpify.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ],
+    "sketch-assets-file": "sketch-assets/icons.sketch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luckyfoxdesign/helpify.git"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.7.0"
+  },
+  "author": "Lucky Fox Design",
+  "license": "MIT",
+  "dependencies": {
+    "numeral": "^2.0.6"
+  }
+}
